@@ -22,8 +22,8 @@ In case, one wants to run the application on his localhost, following steps need
 1. Clone using git command - https://github.com/lk12122/django_app.git
 2. enter your server ip in Allowed Hosts at file - ./django_app/assignment_project/assignment_project/settings.py
 3. cd  ./django_app/assignment_project
-4. use this command to run application - python manage.py runserver <your ip address>:<port>
-5. Hit this url in browser to view response - https://<ip_address>:<port>/user_act/ 
+4. use this command to run application - python manage.py runserver <yourIpAddress>:<port>
+5. Hit this url in browser to view response - https://<ipAddress>:<port>/user_act/ 
 
 
 
