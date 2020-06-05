@@ -2,11 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-
-from django.db import models
-
-
-class User(models.Model):
+class User(models.Model):  # We could have also customised inbuilt user class of django. 
     user_id = models.CharField(max_length=200)
     user_name = models.CharField(max_length=200)
     user_tz = models.CharField(max_length=200)

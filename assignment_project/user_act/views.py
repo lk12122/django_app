@@ -1,15 +1,11 @@
-from django.shortcuts import render
-
 # Create your views here.
 
-
-
-from django.http import JsonResponse, HttpResponse
-from .models import User
+from django.http import JsonResponse
+from user_act.models import User
 import json
 from collections import OrderedDict
 
-def index(request):
+def get_user_data(request):
     result = OrderedDict({"ok": True})
     users = User.objects.all()
     user_list = []
