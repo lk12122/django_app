@@ -30,8 +30,6 @@ class Command(BaseCommand):
             record.save()
             self.stdout.write("----------------------- User Exists! Activity updated!")
         else:
-            start_date = datetime.datetime.strptime(kwargs['start_date'], format)
-            end_date = datetime.datetime.strptime(kwargs['end_date'], format)
             new_user = User(user_id=user_id, user_name=user_name, user_tz=user_tz)
             new_user.save()
             new_act = new_user.activities.create(start_date=start_date,end_date=end_date)
